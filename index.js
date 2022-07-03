@@ -2,20 +2,27 @@
 const http=require("http");
 
 
-const PORT=5500;
+const PORT=3600;
 
 const hostname="localhost";
 
+// till contitued after 1 hrs 
 
 const server=http.createServer((req,res)=>{
-    // req.end("congrats on creting ownserver by yourself bro");
-    res.end("working fine bro keep clearing node js")
+    // console.log(req.url)---->it will return the url of the same kind bro
+
     
+    // req.end("congrats on creting ownserver by yourself bro");
+    // but we can return the html file as well in the 
+    res.end("<h1>Hello world</h1>")
+
+
 
 })
 
 server.listen(PORT,hostname,()=>{
-    console.log("everything working fine at http://localhost:5500")
+    console.log(`everything working fine at http://${hostname}:${PORT}`)
+
     
 })
 
