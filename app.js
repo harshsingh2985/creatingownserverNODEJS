@@ -28,8 +28,7 @@ const server=http.createServer((req,res)=>{
         res.end("<h1>404 page not found</h1>")
 
     }
-
-
+    
 })
 
 server.listen(PORT,hostname,()=>{
